@@ -40,15 +40,4 @@ construction, architecture, renovation, building design, professional services, 
 <!-- PROJECTS -->
 @include('components.sub.projects')
 
-<!-- TEAM -->
-@include('components.sub.team')
-
-<!-- PRICING -->
-@include('components.sub.pricing')
-
-<!-- CLIENT LOGOS -->
-@include('components.sub.clients')
-
-<!-- TESTIMONIALS -->
-@include('components.sub.testimonials')
 @endsection

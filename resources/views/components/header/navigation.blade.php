@@ -14,6 +14,10 @@
         </li>
 
         <li>
+            <a href="#contact">Contact us</a>
+        </li>
+
+        <li>
             <a href="#services">Services</a>
         </li>
 
@@ -38,14 +42,14 @@
             <a href="#projects">Projects</a>
         </li>
 
-        <li>
+        <!-- <li>
             <a href="#team">Team</a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="#pricing">Pricing</a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="#testimonials">Testimonials</a>
-        </li>
+        </li> -->
     </ul>
 </div>

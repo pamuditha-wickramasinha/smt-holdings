@@ -1,6 +1,6 @@
 <footer class="site-footer footer-large footer-light footer-wide">
     <!-- NEWSLETTER SECTION -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="p-a30 call-to-action-wrap bg-no-repeat bg-center site-bg-primary" 
             style="background-image:url({{ asset('images/bg-site.png') }});">
             <div class="row">
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- FOOTER BLOCKS -->
     <div class="footer-top overlay-wraper">
@@ -46,11 +46,8 @@
                 <!-- CONTACT INFO -->
                 @include('components.footer.contact-info')
 
-                <!-- USEFUL LINKS -->
-                @include('components.footer.useful-links')
-
-                <!-- RECENT POSTS -->
-                @include('components.footer.recent-posts')
+                <!-- MAP -->
+                @include('components.footer.map')
             </div>
         </div>
     </div>

@@ -55,7 +55,7 @@
     </div>
 
     <!-- BOTTOM PART - STATISTICS -->
-    <div class="services-half-section-bottom p-t80 p-b50 bg-secondry bg-cover bg-center bg-no-repeat"
+    <!-- <div class="services-half-section-bottom p-t80 p-b50 bg-secondry bg-cover bg-center bg-no-repeat"
         style="background-image: url({{ asset('images/bg5.jpg') }});">
         <div class="container">
             <div class="section-content">
@@ -85,5 +85,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

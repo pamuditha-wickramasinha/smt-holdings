@@ -40,12 +40,18 @@
             <!-- SOCIAL LINKS -->
             <div class="full-social-bg">
                 <ul>
-                    <li><a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.google.com" class="google" target="_blank"><i class="fa fa-google"></i></a></li>
-                    <li><a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.tumblr.com" class="tumblr" target="_blank"><i class="fa fa-tumblr"></i></a></li>
-                    <li><a href="https://twitter.com" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com" class="facebook" target="_blank"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.google.com" class="google" target="_blank"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" class="instagram" target="_blank"><i
+                                class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.tumblr.com" class="tumblr" target="_blank"><i class="fa fa-tumblr"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com" class="youtube" target="_blank"><i
+                                class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
 

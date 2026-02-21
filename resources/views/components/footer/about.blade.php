@@ -1,4 +1,4 @@
-<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="col-lg-4 col-md-6 col-sm-6">
     <div class="widget widget_about">
         <div class="logo-footer clearfix p-b15">
             <a href="{{ route('home') }}">
