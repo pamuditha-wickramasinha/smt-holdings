@@ -1,12 +1,522 @@
 /**
- * Theme CSS entry – imports all styles from the theme folder.
- * Add or replace files in resources/css/theme/ as needed.
+ * Theme CSS - Main Theme Styles
+ * Professional construction and architecture website theme
+ * Best practices: Organized, modular, maintainable
  */
 
-@import './theme/loader.min.css';
-@import './theme/flaticon.min.css';
-@import './theme/style.css';
-@import './theme/skin-1.css';
-@import './theme/switcher.css';
-@import './theme/settings.css';
-@import './theme/navigation.css';
+/* ==========================================================================
+   1. ROOT VARIABLES & GLOBAL STYLES
+   ========================================================================== */
+
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff6600;
+    --dark-color: #1a1a1a;
+    --light-color: #f5f5f5;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+    --transition-time: 0.3s;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   2. LAYOUT & CONTAINERS
+   ========================================================================== */
+
+.page-wraper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ==========================================================================
+   3. TYPOGRAPHY
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-time) ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* ==========================================================================
+   4. BUTTONS
+   ========================================================================== */
+
+.site-button,
+.site-button-secondry {
+    display: inline-block;
+    padding: 12px 32px;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all var(--transition-time) ease;
+    border: 2px solid transparent;
+    text-decoration: none;
+}
+
+.site-button {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.site-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.site-button-secondry {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.site-button-secondry:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-effect {
+    position: relative;
+}
+
+.btn-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    transition: left var(--transition-time) ease;
+    z-index: -1;
+}
+
+.btn-effect:hover::after {
+    left: 0;
+}
+
+/* ==========================================================================
+   5. SECTIONS
+   ========================================================================== */
+
+.section-full {
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+}
+
+.section-content {
+    position: relative;
+}
+
+.section-head {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mt-separator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sep-line-one {
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 2rem;
+}
+
+.sep-line-one::before,
+.sep-line-one::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.sep-line-one::before {
+    right: 100%;
+    margin-right: 30px;
+}
+
+.sep-line-one::after {
+    left: 100%;
+    margin-left: 30px;
+}
+
+/* ==========================================================================
+   6. ICON BOXES
+   ========================================================================== */
+
+.mt-icon-box-wraper {
+    padding: 20px;
+    transition: all var(--transition-time) ease;
+}
+
+.mt-icon-box-wraper:hover {
+    background-color: var(--light-color);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.icon-cell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-md {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.icon-lg {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.icon-content {
+    margin-left: 15px;
+}
+
+/* ==========================================================================
+   7. IMAGES & EFFECTS
+   ========================================================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mt-img-effect {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.zoom-slow {
+    transition: transform 0.5s ease;
+}
+
+.zoom-slow:hover {
+    transform: scale(1.05);
+}
+
+.scale-in-center {
+    animation: scaleInCenter 0.5s ease forwards;
+}
+
+@keyframes scaleInCenter {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hover-shadow {
+    transition: box-shadow var(--transition-time) ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   8. FORMS
+   ========================================================================== */
+
+.input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-family: var(--font-secondary);
+}
+
+.input input,
+.input textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: border-color var(--transition-time) ease;
+}
+
+.input input:focus,
+.input textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.input-animate .spin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width var(--transition-time) ease;
+}
+
+.input-animate input:focus ~ .spin,
+.input-animate textarea:focus ~ .spin {
+    width: 100%;
+}
+
+.form-transparent input,
+.form-transparent textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.form-transparent input::placeholder,
+.form-transparent textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ==========================================================================
+   9. OVERLAY & BACKGROUNDS
+   ========================================================================== */
+
+.overlay-wraper {
+    position: relative;
+}
+
+.overlay-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.opacity-04 {
+    opacity: 0.4;
+}
+
+.opacity-07 {
+    opacity: 0.7;
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+/* ==========================================================================
+   10. UTILITIES
+   ========================================================================== */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-white { color: #fff; }
+.text-black { color: #000; }
+
+.m-t0 { margin-top: 0; }
+.m-b0 { margin-bottom: 0; }
+.m-a30 { margin: 30px; }
+.m-b5 { margin-bottom: 5px; }
+.m-b10 { margin-bottom: 10px; }
+.m-b15 { margin-bottom: 15px; }
+.m-b20 { margin-bottom: 20px; }
+.m-b25 { margin-bottom: 25px; }
+.m-b30 { margin-bottom: 30px; }
+.m-b50 { margin-bottom: 50px; }
+.m-t20 { margin-top: 20px; }
+
+.p-t10 { padding-top: 10px; }
+.p-t20 { padding-top: 20px; }
+.p-t50 { padding-top: 50px; }
+.p-t80 { padding-top: 80px; }
+
+.p-b10 { padding-bottom: 10px; }
+.p-b30 { padding-bottom: 30px; }
+.p-b50 { padding-bottom: 50px; }
+
+.p-tb5 { padding: 5px 0; }
+.p-tb10 { padding: 10px 0; }
+.p-tb50 { padding: 50px 0; }
+
+.p-a20 { padding: 20px; }
+.p-a30 { padding: 30px; }
+
+.p-tb80 { padding: 80px 0; }
+
+.relative { position: relative; }
+
+.font-16 { font-size: 1rem; }
+.font-50 { font-size: 3.125rem; }
+.font-weight-300 { font-weight: 300; }
+.font-weight-500 { font-weight: 500; }
+.font-weight-600 { font-weight: 600; }
+.font-weight-800 { font-weight: 800; }
+
+.max-w400 { max-width: 400px; }
+
+/* ==========================================================================
+   11. RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+
+    .section-full {
+        padding: 40px 0;
+    }
+
+    .sep-line-one::before,
+    .sep-line-one::after {
+        width: 40px;
+    }
+
+    .mobile-page-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .site-button,
+    .site-button-secondry {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+}
+
+/* ==========================================================================
+   12. ANIMATIONS
+   ========================================================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Arrow animation */
+.arrow-animation {
+    transition: transform var(--transition-time) ease;
+}
+
+.arrow-animation:hover {
+    transform: translateX(5px);
+}

@@ -1,32 +1,54 @@
 @extends('layouts.main')
 
 @push('vite')
-    @vite(['resources/css/home.css', 'resources/js/home.js'])
+@vite([])
 @endpush
 
-@section('title', 'Home - ' . config('app.name'))
+@section('title', config('app.name') . ' | Professional Construction & Architecture Services')
 
 @section('meta_description')
-    Welcome to {{ config('app.name', 'SMT Holdings') }}. This is the home page with main layout, header and footer.
+Welcome to {{ config('app.name') }}. Professional construction, architecture, and renovation services. We build your
+dreams with excellence.
 @endsection
 
 @section('meta_keywords')
-    home, {{ config('app.name') }}, welcome, getting started
+construction, architecture, renovation, building design, professional services, {{ config('app.name') }}
 @endsection
 
 @section('content')
-    <div class="page-content">
-        @include('home.slider')
-        @include('home.specialization')
-        @include('home.about-company')
-        @include('home.our-value')
-        @include('home.our-mission')
-        @include('home.our-services')
-        @include('home.call-us')
-        @include('home.our-project')
-        @include('home.our-team')
-        @include('home.pricing')
-        @include('home.client-logo')
-        @include('home.testimonials')
-    </div>
+<!-- SLIDER -->
+@include('components.sub.slider')
+
+<!-- SPECIALIZATION -->
+@include('components.sub.specialization')
+
+<!-- ABOUT COMPANY -->
+@include('components.sub.about')
+
+<!-- VIDEO & VALUE -->
+@include('components.sub.video-value')
+
+<!-- CONTACT FORM -->
+@include('components.sub.contact-form')
+
+<!-- SERVICES -->
+@include('components.sub.services')
+
+<!-- CALL TO ACTION -->
+@include('components.sub.cta')
+
+<!-- PROJECTS -->
+@include('components.sub.projects')
+
+<!-- TEAM -->
+@include('components.sub.team')
+
+<!-- PRICING -->
+@include('components.sub.pricing')
+
+<!-- CLIENT LOGOS -->
+@include('components.sub.clients')
+
+<!-- TESTIMONIALS -->
+@include('components.sub.testimonials')
 @endsection

@@ -1,0 +1,260 @@
+/**
+ * Footer Styles
+ */
+
+.site-footer {
+    background: #1a1a1a;
+    color: #f5f5f5;
+}
+
+/* NEWSLETTER SECTION */
+.call-to-action-wrap {
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.call-to-action-left h4 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.call-to-action-left span {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* NEWSLETTER FORM */
+.newsletter-bx {
+    margin: 0;
+}
+
+.newsletter-bx .input-group {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.newsletter-bx .form-control {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    font-size: 0.95rem;
+}
+
+.newsletter-bx .site-button {
+    border-radius: 0;
+    padding: 12px 25px;
+}
+
+/* FOOTER TOP */
+.footer-top {
+    background: #1a1a1a;
+    padding: 50px 0;
+    border-top: 2px solid #333;
+}
+
+.overlay-main {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER WIDGETS */
+.widget {
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #0066cc;
+}
+
+/* ABOUT WIDGET */
+.widget_about .logo-footer {
+    margin-bottom: 20px;
+}
+
+.widget_about p {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons li a:hover {
+    background: #0066cc;
+    transform: translateY(-3px);
+}
+
+/* ADDRESS WIDGET */
+.widget_address {
+    list-style: none;
+}
+
+.widget_address li {
+    margin-bottom: 15px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.widget_address a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.widget_address a:hover {
+    color: #0066cc;
+}
+
+/* LINKS WIDGET */
+.inline-links ul {
+    list-style: none;
+}
+
+.inline-links li {
+    margin-bottom: 12px;
+}
+
+.inline-links a {
+    color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.inline-links a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* RECENT POSTS WIDGET */
+.widget-post-bx {
+    margin-top: 20px;
+}
+
+.widget-post {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.mt-post-date {
+    flex-shrink: 0;
+    min-width: 60px;
+    text-align: center;
+    background: rgba(0, 102, 204, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.mt-post-date .p-date {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.mt-post-date .p-month,
+.mt-post-date .p-year {
+    display: block;
+    font-size: 0.75rem;
+    color: #ccc;
+}
+
+.mt-post-info {
+    flex: 1;
+}
+
+.post-title {
+    color: #fff;
+    transition: color 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.post-title:hover {
+    color: #0066cc;
+}
+
+.mt-post-meta {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.post-author::before {
+    content: ' ';
+    margin-right: 3px;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.copyrights-text {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .call-to-action-wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .newsletter-bx .input-group {
+        flex-direction: column;
+    }
+
+    .newsletter-bx .form-control,
+    .newsletter-bx .site-button {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .footer-top {
+        padding: 30px 0;
+    }
+
+    .widget {
+        margin-bottom: 25px;
+    }
+
+    .footer-col-3 {
+        margin-top: 25px;
+    }
+}
