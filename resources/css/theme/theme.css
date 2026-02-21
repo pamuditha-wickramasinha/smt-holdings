@@ -1,0 +1,14 @@
+/**
+ * Theme CSS – loaded via Vite.
+ * Place your theme CSS files in resources/css/theme/ (or adjust paths below).
+ * Then run: npm run dev or npm run build
+ */
+
+/* Theme styles – import from theme folder (copy your theme CSS into resources/css/theme/) */
+@import './theme/loader.min.css';
+@import './theme/flaticon.min.css';
+@import './theme/style.css';
+@import './theme/skin-1.css';
+@import './theme/switcher.css';
+@import './theme/settings.css';
+@import './theme/navigation.css';

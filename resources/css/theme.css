@@ -1,0 +1,12 @@
+/**
+ * Theme CSS entry – imports all styles from the theme folder.
+ * Add or replace files in resources/css/theme/ as needed.
+ */
+
+@import './theme/loader.min.css';
+@import './theme/flaticon.min.css';
+@import './theme/style.css';
+@import './theme/skin-1.css';
+@import './theme/switcher.css';
+@import './theme/settings.css';
+@import './theme/navigation.css';
