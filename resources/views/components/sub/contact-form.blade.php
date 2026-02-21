@@ -32,6 +32,28 @@
                                         567-8900</a>
                                 </p>
                             </div>
+
+                            <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0 20px 0;">
+
+                            <div class="social-block">
+                                <h4 style="color: #ffb800; font-weight: 600; font-size: 18px;" class="m-b15">Connect
+                                    With Us</h4>
+                                <ul class="list-inline" style="display: flex; gap: 15px; padding: 0; list-style: none;">
+                                    <li>
+                                        <a href="https://facebook.com/yourprofile" target="_blank"
+                                            style="background: #3b5998; color: white; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 4px; text-decoration: none; transition: 0.3s;">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', config('app.company_phone')) }}"
+                                            target="_blank"
+                                            style="background: #25d366; color: white; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 4px; text-decoration: none; transition: 0.3s;">
+                                            <i class="fa fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
