@@ -330,7 +330,8 @@
         if (searchClose) {
             searchClose.addEventListener('click', (e) => {
                 e.preventDefault();
-                document.getElementById('search')?.style.display = 'none';
+                const searchEl = document.getElementById('search');
+                if (searchEl) searchEl.style.display = 'none';
             });
         }
 
