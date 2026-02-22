@@ -12,21 +12,21 @@
                         </h2>
                     </div>
                 </div>
-                <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</h3>
+                <h3>We specialize in interlock paving, road construction, building construction and all civil engineering works.</h3>
             </div>
 
             <!-- SERVICES GRID -->
             <div class="row services-v2 no-col-gap">
                 @php
                     $services = [
-                        ['icon' => 'images/crane-1.png', 'title' => 'Building Construction', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.'],
-                        ['icon' => 'images/renovation.png', 'title' => 'Building Renovation', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.'],
-                        ['icon' => 'images/toolbox.png', 'title' => 'Building Maintenance', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.'],
-                        ['icon' => 'images/compass.png', 'title' => 'Architecture Design', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.'],
-                        ['icon' => 'images/idea.png', 'title' => 'Construction Consultant', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.'],
-                        ['icon' => 'images/dump-truck.png', 'title' => 'Material Supply', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.'],
-                        ['icon' => 'images/architecture.png', 'title' => 'House Renovation', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.'],
-                        ['icon' => 'images/planning.png', 'title' => 'Interior Design', 'description' => 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.']
+                        ['icon' => 'images/crane-1.png', 'title' => 'Building Construction', 'description' => 'We handle all types of residential and commercial building construction projects with precision and quality craftsmanship.'],
+                        ['icon' => 'images/renovation.png', 'title' => 'Road Construction', 'description' => 'Professional road construction and infrastructure development services including asphalt and concrete roads.'],
+                        ['icon' => 'images/toolbox.png', 'title' => 'Interlock Paving', 'description' => 'Expert interlock paving solutions for driveways, pathways, parking areas and decorative outdoor spaces.'],
+                        ['icon' => 'images/compass.png', 'title' => 'Civil Works', 'description' => 'Comprehensive civil engineering works including drainage, foundations, retaining walls and site development.'],
+                        ['icon' => 'images/idea.png', 'title' => 'Construction Consulting', 'description' => 'Professional advice and consultation for your construction projects from planning to completion.'],
+                        ['icon' => 'images/dump-truck.png', 'title' => 'Material Supply', 'description' => 'Reliable supply of high-quality construction materials delivered to your project site on time.'],
+                        ['icon' => 'images/architecture.png', 'title' => 'Building Renovation', 'description' => 'Complete building renovation and refurbishment services to restore or upgrade your existing structures.'],
+                        ['icon' => 'images/planning.png', 'title' => 'Building Maintenance', 'description' => 'Ongoing maintenance services to keep your buildings in top condition and extend their lifespan.']
                     ];
                 @endphp
 
@@ -42,9 +42,9 @@
                                 <div class="icon-content">
                                     <h4 class="mt-tilte m-b25">{{ $service['title'] }}</h4>
                                     <p>{{ $service['description'] }}</p>
-                                    <a href="{{ route('services') }}" class="site-button-link" data-hover="Read More">
+                                    <!-- <a href="{{ route('services') }}" class="site-button-link" data-hover="Read More">
                                         Read More <i class="fa fa-angle-right arrow-animation"></i>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>

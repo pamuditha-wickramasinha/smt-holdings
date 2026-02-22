@@ -18,9 +18,9 @@
             <div class="owl-carousel testimonial-home-2 m-b30">
                 @php
                     $testimonials = [
-                        ['image' => 'images/pic1.jpg', 'name' => 'Shelly Johnson', 'role' => 'Business Person'],
-                        ['image' => 'images/pic2_1.jpg', 'name' => 'Shelly Johnson', 'role' => 'Business Person'],
-                        ['image' => 'images/pic3_1.jpg', 'name' => 'Shelly Johnson', 'role' => 'Business Person']
+                        ['image' => 'images/pic1.jpg', 'name' => 'Kasun Perera', 'role' => 'Property Owner', 'text' => 'SMT Holdings did an excellent job with the interlock paving for my driveway. The work was completed on time and the quality is outstanding. Highly recommend!'],
+                        ['image' => 'images/pic2_1.jpg', 'name' => 'Nimal Bandara', 'role' => 'Business Owner', 'text' => 'We hired SMT Holdings for our commercial building construction project. Their team was professional, skilled and delivered exactly what was promised. Great service!'],
+                        ['image' => 'images/pic3_1.jpg', 'name' => 'Sunil Rajapaksa', 'role' => 'Homeowner', 'text' => 'The road construction project done by SMT Holdings was impressive. The workmanship is top quality and the team was very cooperative throughout the project.']
                     ];
                 @endphp
 
@@ -37,8 +37,7 @@
 
                                 <div class="testimonial-text">
                                     <span class="fa fa-quote-right"></span>
-                                    <p>Excellent Customer support!. The template itself is very extended. simply dummy text of 
-                                    the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p>{{ $testimonial['text'] }}</p>
                                 </div>
 
                                 <div class="testimonial-detail clearfix">

@@ -37,24 +37,23 @@
                             <span class="font-weight-100">We will provide</span> you the best work which you dreamt for!
                         </h3>
                         <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page 
-                            when looking at its layout.there are many variations of passages of Ipsum available,
+                            At SMT Holdings, we are committed to delivering excellence in every project. From interlock paving to large-scale road and building construction, we bring decades of expertise to each job.
                         </p>
                         <ul class="list-angle-right anchor-line">
-                            <li><a href="{{ route('services') }}">Construction Management</a></li>
-                            <li><a href="{{ route('services') }}">Pre Construction Services</a></li>
-                            <li><a href="{{ route('services') }}">Contract Administration</a></li>
+                            <li><a href="{{ route('services') }}">Interlock Paving</a></li>
+                            <li><a href="{{ route('services') }}">Road Construction</a></li>
+                            <li><a href="{{ route('services') }}">Building Construction & Civil Works</a></li>
                         </ul>
                     </div>
 
                     <!-- AUTHOR INFO -->
                     <div class="author-info author-info-v2 p-t20">
-                        <div class="author-signature">
+                        <!-- <div class="author-signature">
                             <img src="{{ asset('images/Signature%2BBlack.png') }}" alt="Signature" width="150">
-                        </div>
+                        </div> -->
                         <div class="author-name">
-                            <h4 class="m-t0">David Houkr</h4>
-                            <p>Architect & Founder</p>
+                            <h4 class="m-t0">SMT Holdings</h4>
+                            <p>Your Trusted Civil Works Partner</p>
                         </div>
                     </div>
                 </div>

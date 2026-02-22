@@ -123,4 +123,35 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Company Information
+    |--------------------------------------------------------------------------
+    */
+    'company_name'        => env('COMPANY_NAME', 'SMT Holdings'),
+    'company_description' => env('COMPANY_DESCRIPTION', 'SMT Holdings specializing in interlock paving, building and road construction and all civil works.'),
+    'company_address'     => env('COMPANY_ADDRESS', '159/2, Wilaththawa, Bingiriya'),
+    'company_location'    => env('COMPANY_LOCATION', 'Bingiriya, Sri Lanka'),
+    'company_email'       => env('COMPANY_EMAIL', 'smtholdings@gmail.com'),
+    'company_phone'       => env('COMPANY_PHONE', '+94774415869'),
+    'company_phone_alt'   => env('COMPANY_PHONE_ALT', '+94774473518'),
+    'company_whatsapp'    => env('COMPANY_WHATSAPP', '94774415869'),
+    'company_facebook'    => env('COMPANY_FACEBOOK', 'https://www.facebook.com/share/18N1XuZ9D5/'),
+    'company_tiktok'      => env('COMPANY_TIKTOK', 'https://www.tiktok.com/@smt.holdings'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Site Color Scheme
+    |--------------------------------------------------------------------------
+    | Change these values in .env to restyle the entire website instantly.
+    | PRIMARY_COLOR   = main accent (buttons, highlights, icons)
+    | SECONDARY_COLOR = secondary button background
+    | DARK_COLOR      = dark background sections
+    | ACCENT_HOVER_COLOR = hover state color
+    */
+    'primary_color'      => env('PRIMARY_COLOR', '#F5BF23'),
+    'secondary_color'    => env('SECONDARY_COLOR', '#292929'),
+    'dark_color'         => env('DARK_COLOR', '#222222'),
+    'accent_hover_color' => env('ACCENT_HOVER_COLOR', '#222222'),
+
 ];

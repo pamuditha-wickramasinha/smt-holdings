@@ -11,7 +11,7 @@
                     </h2>
                 </div>
             </div>
-            <h2>Discover trust team and our experts</h2>
+            <h2>Meet the people behind SMT Holdings</h2>
         </div>
 
         <!-- TEAM MEMBERS -->
@@ -36,12 +36,8 @@
                                 <h4>{{ $member['name'] }}</h4>
                                 <h5>{{ $member['role'] }}</h5>
                                 <div class="icons">
-                                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    <a href="https://rss.com" target="_blank"><i class="fa fa-rss"></i></a>
-                                    <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
-                                    <a href="https://in.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    <a href="{{ config('app.company_facebook') }}" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://wa.me/{{ config('app.company_whatsapp') }}" target="_blank"><i class="fa fa-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -17,11 +17,11 @@
             <div class="filter-wrap text-center">
                 <ul class="filter-navigation inline-navigation masonry-filter link-style text-uppercase">
                     <li class="active"><a data-filter="*" href="javascript:void(0);" data-hover="All">All</a></li>
-                    <li><a data-filter=".cat-1" href="javascript:void(0);" data-hover="Construction">Construction</a></li>
-                    <li><a data-filter=".cat-2" href="javascript:void(0);" data-hover="Renovation">Renovation</a></li>
-                    <li><a data-filter=".cat-3" href="javascript:void(0);" data-hover="Outdoor">Outdoor</a></li>
-                    <li><a data-filter=".cat-4" href="javascript:void(0);" data-hover="Interiors">Interiors</a></li>
-                    <li><a data-filter=".cat-5" href="javascript:void(0);" data-hover="Consulting">Consulting</a></li>
+                    <li><a data-filter=".cat-1" href="javascript:void(0);" data-hover="Paving">Paving</a></li>
+                    <li><a data-filter=".cat-2" href="javascript:void(0);" data-hover="Construction">Construction</a></li>
+                    <li><a data-filter=".cat-3" href="javascript:void(0);" data-hover="Road Work">Road Work</a></li>
+                    <li><a data-filter=".cat-4" href="javascript:void(0);" data-hover="Civil Works">Civil Works</a></li>
+                    <li><a data-filter=".cat-5" href="javascript:void(0);" data-hover="Renovation">Renovation</a></li>
                 </ul>
             </div>
         </div>
@@ -31,12 +31,12 @@
             <div class="portfolio-wrap row mfp-gallery product-stamp clearfix">
                 @php
                     $projects = [
-                        ['image' => 'images/pic4.jpg', 'title' => '2-storey House', 'category' => 'cat-1', 'tags' => 'Construction, interior'],
-                        ['image' => 'images/pic2_2.jpg', 'title' => 'City Buildings', 'category' => 'cat-2', 'tags' => 'Buildings, Engineering'],
-                        ['image' => 'images/pic3_2.jpg', 'title' => 'Living room', 'category' => 'cat-3', 'tags' => 'Aqaba, Jordan'],
-                        ['image' => 'images/pic5.jpg', 'title' => 'Bridge Architecture', 'category' => 'cat-4', 'tags' => 'Design and Construction'],
-                        ['image' => 'images/pic7.jpg', 'title' => 'Feugiat nulla', 'category' => 'cat-5', 'tags' => 'Engineering, interior'],
-                        ['image' => 'images/pic6_1.jpg', 'title' => 'Skeptic cambridge', 'category' => 'cat-4', 'tags' => 'Construction']
+                        ['image' => 'images/pic4.jpg', 'title' => 'Residential Interlock Paving', 'category' => 'cat-1', 'tags' => 'Paving, Residential'],
+                        ['image' => 'images/pic2_2.jpg', 'title' => 'Commercial Building', 'category' => 'cat-2', 'tags' => 'Construction, Commercial'],
+                        ['image' => 'images/pic3_2.jpg', 'title' => 'Road Development', 'category' => 'cat-3', 'tags' => 'Road Work, Infrastructure'],
+                        ['image' => 'images/pic5.jpg', 'title' => 'Drainage & Civil Works', 'category' => 'cat-4', 'tags' => 'Civil Works, Engineering'],
+                        ['image' => 'images/pic7.jpg', 'title' => 'Building Renovation', 'category' => 'cat-5', 'tags' => 'Renovation, Refurbishment'],
+                        ['image' => 'images/pic6_1.jpg', 'title' => 'Parking Area Paving', 'category' => 'cat-1', 'tags' => 'Paving, Commercial']
                     ];
                 @endphp
 

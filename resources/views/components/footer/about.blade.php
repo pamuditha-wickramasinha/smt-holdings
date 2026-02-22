@@ -6,16 +6,21 @@
             </a>
         </div>
         <p class="max-w400">
-            {{ config('app.company_description', 'We deliver excellence in construction, architecture, and renovation with a commitment to quality and innovation.') }}
+            {{ config('app.company_description') }}
         </p>
 
         <!-- SOCIAL ICONS -->
         <ul class="social-icons mt-social-links">
-            <li><a href="https://www.google.com" class="fa fa-google" target="_blank"></a></li>
-            <li><a href="https://rss.com" class="fa fa-rss" target="_blank"></a></li>
-            <li><a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a></li>
-            <li><a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://in.linkedin.com" class="fa fa-linkedin" target="_blank"></a></li>
+            <li><a href="{{ config('app.company_facebook') }}" class="fa fa-facebook" target="_blank" aria-label="Facebook"></a>
+            </li>
+            <li><a href="https://wa.me/{{ config('app.company_whatsapp') }}"
+                    class="fa fa-whatsapp" target="_blank" aria-label="WhatsApp"></a></li>
+            <li><a href="{{ config('app.company_tiktok') }}" target="_blank" aria-label="TikTok"><svg
+                        style="padding: 7px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                    </svg></a></li>
         </ul>
     </div>
 </div>

@@ -40,7 +40,17 @@
 
     <!-- COLOR THEME -->
     <link rel="stylesheet" class="skin" type="text/css" href="{{ asset('css/skin-1.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/switcher.css') }}">
+    <!-- DYNAMIC COLOR VARIABLES (from .env / config) -->
+    <style>
+        :root {
+            --site-primary:   {{ config('app.primary_color', '#F5BF23') }};
+            --site-secondary: {{ config('app.secondary_color', '#292929') }};
+            --site-dark:      {{ config('app.dark_color', '#222222') }};
+            --site-hover:     {{ config('app.accent_hover_color', '#222222') }};
+            /* Derived shades */
+            --site-primary-alpha: {{ config('app.primary_color', '#F5BF23') }}33;
+        }
+    </style>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
@@ -103,8 +113,6 @@
     <!-- CUSTOM SCRIPTS -->
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/shortcode.js') }}"></script>
-    <script src="{{ asset('js/switcher.js') }}"></script>
-
     @stack('scripts')
 </body>
 

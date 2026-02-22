@@ -9,22 +9,22 @@
                             'number' => '1',
                             'icon' => 'images/compass.png',
                             'image' => 'images/1.jpg',
-                            'title' => 'Architecture Design',
-                            'description' => 'lorem Ipsum available, but the majority have suffered alteration in some form, by ious by accident.'
+                            'title' => 'Interlock Paving',
+                            'description' => 'Premium interlock paving for driveways, pathways, parking areas and outdoor spaces with durable, decorative finishes.'
                         ],
                         [
                             'number' => '2',
                             'icon' => 'images/crane-1.png',
                             'image' => 'images/3.jpg',
                             'title' => 'Building Construction',
-                            'description' => 'lorem Ipsum available, but the majority have suffered alteration in some form, by ious by accident.'
+                            'description' => 'Full-scale residential and commercial building construction with a focus on quality, safety and timely delivery.'
                         ],
                         [
                             'number' => '3',
                             'icon' => 'images/renovation.png',
                             'image' => 'images/2.jpg',
-                            'title' => 'Building Renovation',
-                            'description' => 'lorem Ipsum available, but the majority have suffered alteration in some form, by ious by accident.'
+                            'title' => 'Road Construction',
+                            'description' => 'Expert road construction and civil infrastructure works covering asphalt, concrete and all related civil works.'
                         ]
                     ];
                 @endphp
@@ -43,9 +43,9 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte m-b25">{{ $spec['title'] }}</h4>
                                         <p>{{ $spec['description'] }}</p>
-                                        <a href="{{ route('services') }}" class="site-button-link" data-hover="Read More">
+                                        <!-- <a href="{{ route('services') }}" class="site-button-link" data-hover="Read More">
                                             Read More <i class="fa fa-angle-right arrow-animation"></i>
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                                 <div class="bg-cover half-blocks-bg" 

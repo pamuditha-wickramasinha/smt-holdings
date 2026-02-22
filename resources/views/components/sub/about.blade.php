@@ -40,13 +40,11 @@
                                 <span class="font-weight-100">Committed</span> to superior quality and results.
                             </h3>
                             <p>
-                                <strong>Contrary to popular belief, lorem Ipsum is not simply text. It has roots in a
-                                    piece of
-                                    classical Latin literature from 45 BC, making it over 2000 years old.</strong>
+                                <strong>SMT Holdings is your trusted partner for interlock paving, building construction, road construction and all civil engineering works. We deliver quality craftsmanship with every project.</strong>
                             </p>
-                            <div class="text-left">
+                            <!-- <div class="text-left">
                                 <a href="{{ route('about') }}" class="site-button-secondry btn-effect">Read More</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

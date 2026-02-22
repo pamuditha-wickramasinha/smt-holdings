@@ -33,13 +33,13 @@
             <!-- Title -->
             <h1
                 style="font-size: 72px; line-height: 82px; font-weight: 700; margin: 0 0 30px 0; font-family: 'Poppins', sans-serif; text-transform: uppercase; color: #fff;">
-                We Build Your Dream
+                Building Your Vision
             </h1>
 
             <!-- Subtitle -->
             <p
                 style="font-size: 20px; line-height: 28px; font-weight: 500; margin: 0 0 40px 0; font-family: 'Poppins', sans-serif; color: #fff; max-width: 600px;">
-                It is a long established fact that a reader will be distracted by the readable content.
+                Specializing in Interlock Paving, Building & Road Construction and all Civil Works.
             </p>
 
             <!-- Buttons -->
