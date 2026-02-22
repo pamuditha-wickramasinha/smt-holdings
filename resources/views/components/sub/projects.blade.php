@@ -15,14 +15,14 @@
         <!-- FILTER -->
         <div class="section-content">
             <div class="filter-wrap text-center">
-                <ul class="filter-navigation inline-navigation masonry-filter link-style text-uppercase">
+                <!-- <ul class="filter-navigation inline-navigation masonry-filter link-style text-uppercase">
                     <li class="active"><a data-filter="*" href="javascript:void(0);" data-hover="All">All</a></li>
                     <li><a data-filter=".cat-1" href="javascript:void(0);" data-hover="Paving">Paving</a></li>
                     <li><a data-filter=".cat-2" href="javascript:void(0);" data-hover="Construction">Construction</a></li>
                     <li><a data-filter=".cat-3" href="javascript:void(0);" data-hover="Road Work">Road Work</a></li>
                     <li><a data-filter=".cat-4" href="javascript:void(0);" data-hover="Civil Works">Civil Works</a></li>
                     <li><a data-filter=".cat-5" href="javascript:void(0);" data-hover="Renovation">Renovation</a></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
 
@@ -31,12 +31,12 @@
             <div class="portfolio-wrap row mfp-gallery product-stamp clearfix">
                 @php
                     $projects = [
-                        ['image' => 'images/pic4.jpg', 'title' => 'Residential Interlock Paving', 'category' => 'cat-1', 'tags' => 'Paving, Residential'],
-                        ['image' => 'images/pic2_2.jpg', 'title' => 'Commercial Building', 'category' => 'cat-2', 'tags' => 'Construction, Commercial'],
-                        ['image' => 'images/pic3_2.jpg', 'title' => 'Road Development', 'category' => 'cat-3', 'tags' => 'Road Work, Infrastructure'],
-                        ['image' => 'images/pic5.jpg', 'title' => 'Drainage & Civil Works', 'category' => 'cat-4', 'tags' => 'Civil Works, Engineering'],
-                        ['image' => 'images/pic7.jpg', 'title' => 'Building Renovation', 'category' => 'cat-5', 'tags' => 'Renovation, Refurbishment'],
-                        ['image' => 'images/pic6_1.jpg', 'title' => 'Parking Area Paving', 'category' => 'cat-1', 'tags' => 'Paving, Commercial']
+                        ['image' => 'images/PP-1.jpeg', 'title' => 'Covered Parking Paving', 'category' => 'cat-1', 'tags' => 'Commercial, Interlock'],
+                        ['image' => 'images/PP-2.jpeg', 'title' => 'Residential Driveway', 'category' => 'cat-2', 'tags' => 'Residential, Paving'],
+                        ['image' => 'images/PP-3.jpeg', 'title' => 'Decorative Garden Paving', 'category' => 'cat-3', 'tags' => 'Landscaping, Design'],
+                        ['image' => 'images/PP-4.jpeg', 'title' => 'Grass Track Driveway', 'category' => 'cat-4', 'tags' => 'Residential, Garden'],
+                        ['image' => 'images/PP-5.jpeg', 'title' => 'Garden Stepping Stones', 'category' => 'cat-5', 'tags' => 'Landscaping, Pathway'],
+                        ['image' => 'images/PP-1.jpeg', 'title' => 'Industrial Parking Space', 'category' => 'cat-1', 'tags' => 'Commercial, Paving']
                     ];
                 @endphp
 
