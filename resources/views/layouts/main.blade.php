@@ -40,51 +40,8 @@
 
     <!-- COLOR THEME -->
     <link rel="stylesheet" class="skin" type="text/css" href="{{ asset('css/skin-1.css') }}">
-    <!-- DYNAMIC COLOR VARIABLES (from .env / config) -->
-    <style>
-    :root {
-        --site-primary: {
-                {
-                config('app.primary_color', '#F5BF23')
-            }
-        }
-
-        ;
-
-        --site-secondary: {
-                {
-                config('app.secondary_color', '#292929')
-            }
-        }
-
-        ;
-
-        --site-dark: {
-                {
-                config('app.dark_color', '#222222')
-            }
-        }
-
-        ;
-
-        --site-hover: {
-                {
-                config('app.accent_hover_color', '#222222')
-            }
-        }
-
-        ;
-
-        /* Derived shades */
-        --site-primary-alpha: {
-                {
-                config('app.primary_color', '#F5BF23')
-            }
-        }
-
-        33;
-    }
-    </style>
+    <!-- Dynamic color variables served as CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ route('theme.colors') }}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"

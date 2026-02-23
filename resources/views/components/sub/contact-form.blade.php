@@ -12,8 +12,8 @@
                             <div class="info-block m-b30">
                                 <h4 style="color: var(--site-primary); font-weight: 600;" class="m-b5 m-t0">Address</h4>
                                 <p style="font-size: 16px; opacity: 0.8; line-height: 1.6;" class="m-b0">
-                                    159/2, Wilaththawa,<br>
-                                    Bingiriya, Sri Lanka
+                                    {{ config('app.company_address', '34/7 Liverpool Street, Suite 636, London') }}<br>
+                                    {{ config('app.company_location', '34/7 Liverpool Street, Suite 636, London') }}
                                 </p>
                             </div>
 
@@ -28,15 +28,18 @@
                             <div class="info-block m-b30">
                                 <h4 style="color: var(--site-primary); font-weight: 600;" class="m-b5 m-t0">Phone</h4>
                                 <p style="font-size: 16px; opacity: 0.8;" class="m-b0">
-                                    <a href="tel:+94774415869" class="text-white" style="text-decoration: none;">+94 77 441 5869</a><br>
-                                    <a href="tel:+94774473518" class="text-white" style="text-decoration: none;">+94 77 447 3518</a>
+                                    <a href="tel:+94774415869" class="text-white" style="text-decoration: none;">+94 77
+                                        441 5869</a><br>
+                                    <a href="tel:+94774473518" class="text-white" style="text-decoration: none;">+94 77
+                                        447 3518</a>
                                 </p>
                             </div>
 
                             <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0 20px 0;">
 
                             <div class="social-block">
-                                <h4 style="color: var(--site-primary); font-weight: 600; font-size: 18px;" class="m-b15">Connect
+                                <h4 style="color: var(--site-primary); font-weight: 600; font-size: 18px;"
+                                    class="m-b15">Connect
                                     With Us</h4>
                                 <ul class="list-inline" style="display: flex; gap: 15px; padding: 0; list-style: none;">
                                     <li>
@@ -46,8 +49,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://wa.me/{{ config('app.company_whatsapp') }}"
-                                            target="_blank"
+                                        <a href="https://wa.me/{{ config('app.company_whatsapp') }}" target="_blank"
                                             style="background: #25d366; color: white; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 4px; text-decoration: none; transition: 0.3s;">
                                             <i class="fa fa-whatsapp"></i>
                                         </a>
