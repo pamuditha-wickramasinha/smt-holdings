@@ -15,7 +15,7 @@
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size:18px;
-	color: rgb(245,192,35);
+	color: var(--site-primary);
 	letter-spacing: 0.2em;
 }
 .cssload-loader::before, .cssload-loader::after {
@@ -23,7 +23,7 @@
 	display: block;
 	width: 15px;
 	height: 15px;
-	background: rgb(34,34,34);
+	background: var(--site-secondary);
 	position: absolute;
 	animation: cssload-load 0.81s infinite alternate ease-in-out;
 		-o-animation: cssload-load 0.81s infinite alternate ease-in-out;

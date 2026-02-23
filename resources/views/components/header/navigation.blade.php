@@ -1,5 +1,5 @@
-<div class="header-nav navbar-collapse collapse">
-    <ul class="nav navbar-nav">
+<div class="header-nav navbar-collapse collapse justify-content-center">
+    <ul class="nav navbar-nav gap-4">
         <li class="active">
             <a href="#home">Home</a>
             <!-- <ul class="sub-menu">

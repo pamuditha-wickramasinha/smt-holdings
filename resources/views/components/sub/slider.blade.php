@@ -28,7 +28,7 @@
 
         <!-- Content Container -->
         <div
-            style="position: absolute; top: 50%; left: 50px; transform: translateY(-50%); z-index: 10; max-width: 800px; color: white;">
+            style="position: absolute; top: 45%; left: 50px; transform: translateY(-50%); z-index: 10; max-width: 800px; color: white;">
 
             <!-- Title -->
             <h1
