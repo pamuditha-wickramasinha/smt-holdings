@@ -15,8 +15,8 @@
     <meta name="author" content="{{ config('app.name') }}">
 
     <!-- FAVICONS -->
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
+    <link rel="icon" href="{{ asset('images/logo-light.png') }}">
+    <link rel="shortcut icon" href="{{ asset('images/logo-light.png') }}">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
@@ -42,14 +42,48 @@
     <link rel="stylesheet" class="skin" type="text/css" href="{{ asset('css/skin-1.css') }}">
     <!-- DYNAMIC COLOR VARIABLES (from .env / config) -->
     <style>
-        :root {
-            --site-primary:   {{ config('app.primary_color', '#F5BF23') }};
-            --site-secondary: {{ config('app.secondary_color', '#292929') }};
-            --site-dark:      {{ config('app.dark_color', '#222222') }};
-            --site-hover:     {{ config('app.accent_hover_color', '#222222') }};
-            /* Derived shades */
-            --site-primary-alpha: {{ config('app.primary_color', '#F5BF23') }}33;
+    :root {
+        --site-primary: {
+                {
+                config('app.primary_color', '#F5BF23')
+            }
         }
+
+        ;
+
+        --site-secondary: {
+                {
+                config('app.secondary_color', '#292929')
+            }
+        }
+
+        ;
+
+        --site-dark: {
+                {
+                config('app.dark_color', '#222222')
+            }
+        }
+
+        ;
+
+        --site-hover: {
+                {
+                config('app.accent_hover_color', '#222222')
+            }
+        }
+
+        ;
+
+        /* Derived shades */
+        --site-primary-alpha: {
+                {
+                config('app.primary_color', '#F5BF23')
+            }
+        }
+
+        33;
+    }
     </style>
 
     <!-- Google Fonts -->
