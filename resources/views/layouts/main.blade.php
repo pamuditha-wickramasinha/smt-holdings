@@ -40,8 +40,7 @@
 
     <!-- COLOR THEME -->
     <link rel="stylesheet" class="skin" type="text/css" href="{{ asset('css/skin-1.css') }}">
-    <!-- Dynamic color variables served as CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ route('theme.colors') }}">
+    <link rel="stylesheet" class="skin" type="text/css" href="{{ asset('css/dynamic-colors.css') }}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"

@@ -21,8 +21,3 @@ Route::get('/search', [HomeController::class, 'index'])->name('search');
 Route::get('images/{path}', [ImageController::class, 'show'])
     ->where('path', '.*')
     ->name('images.show');
-
-// Dynamic theme colors served as CSS via Blade view
-Route::get('/css/dynamic-colors.css', function () {
-    return response()->view('css.dynamic-colors')->header('Content-Type', 'text/css');
-})->name('theme.colors');
