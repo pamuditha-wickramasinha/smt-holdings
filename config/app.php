@@ -132,7 +132,7 @@ return [
     'company_description' => env('COMPANY_DESCRIPTION', 'SMT Holdings specializing in interlock paving, building and road construction and all civil works.'),
     'company_address'     => env('COMPANY_ADDRESS', '159/2, Wilaththawa, Bingiriya'),
     'company_location'    => env('COMPANY_LOCATION', 'Bingiriya, Sri Lanka'),
-    'company_email'       => env('COMPANY_EMAIL', 'smtholdings@gmail.com'),
+    'company_email'       => env('COMPANY_EMAIL', 'smtmwholdings@gmail.com'),
     'company_phone'       => env('COMPANY_PHONE', '+94774415869'),
     'company_phone_alt'   => env('COMPANY_PHONE_ALT', '+94774473518'),
     'company_whatsapp'    => env('COMPANY_WHATSAPP', '94774415869'),

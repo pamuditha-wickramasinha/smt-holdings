@@ -16,6 +16,7 @@ Route::get('/contact', [HomeController::class, 'index'])->name('contact');
 Route::post('/contact', [HomeController::class, 'index'])->name('contact.submit');
 Route::post('/newsletter/subscribe', [HomeController::class, 'index'])->name('newsletter.subscribe');
 Route::get('/search', [HomeController::class, 'index'])->name('search');
+Route::get('/projects', [HomeController::class, 'projects'])->name('projects');
 
 // Serve images from resources/images/ at URL /images/{path}
 Route::get('images/{path}', [ImageController::class, 'show'])

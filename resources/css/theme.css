@@ -10,7 +10,7 @@
 
 :root {
     /* These reference the dynamic vars injected from .env in the layout <head> */
-    --primary-color: var(--site-primary, #F5BF23);
+    --primary-color: var(--site-primary, #f5bf23);
     --secondary-color: var(--site-secondary, #292929);
     --dark-color: var(--site-dark, #222222);
     --hover-color: var(--site-hover, #222222);
@@ -19,8 +19,8 @@
     --text-color: #333333;
     --border-color: #e0e0e0;
     --transition-time: 0.3s;
-    --font-primary: 'Roboto', sans-serif;
-    --font-secondary: 'Poppins', sans-serif;
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
 }
 
 /* Global Reset */
@@ -163,7 +163,7 @@ a:hover {
 }
 
 .btn-effect::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
@@ -215,7 +215,7 @@ a:hover {
 
 .sep-line-one::before,
 .sep-line-one::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     width: 100px;
@@ -413,12 +413,93 @@ img {
     opacity: 0.7;
 }
 
+.bg-blue-gradient {
+    background: linear-gradient(to right, rgba(0, 51, 153, 0.8) 0%, rgba(0, 51, 153, 0) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    mask-image: linear-gradient(to right, black 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 0%, transparent 100%);
+}
+
 .bg-parallax {
     background-attachment: fixed;
 }
 
 /* ==========================================================================
-   10. UTILITIES
+   10. HERO BANNER
+   ========================================================================== */
+
+.hero-content {
+    position: absolute;
+    top: 45%;
+    left: 50px;
+    transform: translateY(-50%);
+    z-index: 10;
+    max-width: 800px;
+    color: white;
+}
+
+.hero-title {
+    font-size: 72px;
+    line-height: 82px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+    font-family: var(--font-secondary);
+    color: #fff;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        left: 20px;
+        right: 20px;
+        top: 50%;
+    }
+
+    .hero-title {
+        font-size: 32px !important;
+        line-height: 42px !important;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px !important;
+        line-height: 22px !important;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce Header Heights on Mobile */
+    #welcome_wrapper {
+        min-height: 450px !important;
+    }
+
+    .mt-bnr-inr {
+        min-height: 250px !important;
+    }
+}
+
+/* ==========================================================================
+   11. UTILITIES
    ========================================================================== */
 
 .text-center {
@@ -660,4 +741,20 @@ img {
 
 .arrow-animation:hover {
     transform: translateX(5px);
+}
+
+/* Navbar Transparency */
+.nav-transparent {
+    background-color: rgba(0, 0, 0, 0.705) !important;
+    transition: background-color 0.4s ease !important;
+}
+
+.is-fixed.color-fill .nav-transparent {
+    background-color: #000 !important;
+}
+
+@media (max-width: 991px) {
+    .nav-transparent {
+        background-color: #000 !important;
+    }
 }

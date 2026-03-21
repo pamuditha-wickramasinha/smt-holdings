@@ -11,4 +11,12 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    /**
+     * Display the projects page.
+     */
+    public function projects()
+    {
+        return view('projects');
+    }
 }

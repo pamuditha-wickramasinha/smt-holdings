@@ -1,7 +1,7 @@
 <div class="header-nav navbar-collapse collapse justify-content-center">
     <ul class="nav navbar-nav gap-4">
         <li class="active">
-            <a href="#home">Home</a>
+            <a href="{{ route('home') }}">Home</a>
             <!-- <ul class="sub-menu">
                 <li><a href="{{ route('home') }}">Home - Main</a></li>
                 <li><a href="javascript:void(0)">Home - Variant 2</a></li>
@@ -10,15 +10,15 @@
         </li>
 
         <li>
-            <a href="#about">About us</a>
+            <a href="{{ route('home') }}#about">About us</a>
         </li>
 
         <li>
-            <a href="#contact">Contact us</a>
+            <a href="{{ route('home') }}#contact">Contact us</a>
         </li>
 
         <li>
-            <a href="#services">Services</a>
+            <a href="{{ route('home') }}#services">Services</a>
         </li>
 
         <!-- <li>
@@ -39,7 +39,7 @@
         </li> -->
 
         <li>
-            <a href="#projects">Projects</a>
+            <a href="{{ route('projects') }}">Projects</a>
         </li>
 
         <!-- <li>

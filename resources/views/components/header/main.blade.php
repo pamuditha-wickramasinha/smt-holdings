@@ -38,7 +38,7 @@
 
     <!-- MAIN NAVIGATION BAR -->
     <div class="sticky-header main-bar-wraper">
-        <div class="main-bar header-botton nav-bg-secondry">
+        <div class="main-bar header-botton nav-transparent">
             <div class="container">
                 <!-- MOBILE TOGGLE -->
                 <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button"

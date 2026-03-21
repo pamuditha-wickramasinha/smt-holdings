@@ -20,18 +20,16 @@
                             <div class="info-block m-b30">
                                 <h4 style="color: var(--site-primary); font-weight: 600;" class="m-b5 m-t0">Email</h4>
                                 <p style="font-size: 16px; opacity: 0.8;" class="m-b0">
-                                    <a href="mailto:smtholdings@gmail.com" class="text-white"
-                                        style="text-decoration: none;">smtholdings@gmail.com</a>
+                                    <a href="mailto:smtmwholdings@gmail.com" class="text-white"
+                                        style="text-decoration: none;">smtmwholdings@gmail.com</a>
                                 </p>
                             </div>
 
                             <div class="info-block m-b30">
                                 <h4 style="color: var(--site-primary); font-weight: 600;" class="m-b5 m-t0">Phone</h4>
                                 <p style="font-size: 16px; opacity: 0.8;" class="m-b0">
-                                    <a href="tel:+94774415869" class="text-white" style="text-decoration: none;">+94 77
-                                        441 5869</a><br>
-                                    <a href="tel:+94774473518" class="text-white" style="text-decoration: none;">+94 77
-                                        447 3518</a>
+                                    <a href="tel:+94774415869" class="text-white" style="text-decoration: none;">+94 774 457 165</a><br>
+                                    <a href="tel:+94774473518" class="text-white" style="text-decoration: none;">+94 774 415 869</a>
                                 </p>
                             </div>
 

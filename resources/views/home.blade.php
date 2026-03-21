@@ -38,6 +38,5 @@ construction, architecture, renovation, building design, professional services, 
 @include('components.sub.cta')
 
 <!-- PROJECTS -->
-@include('components.sub.projects')
 
 @endsection

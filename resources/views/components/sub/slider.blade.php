@@ -1,55 +1,43 @@
 <!-- HERO BANNER SECTION -->
 <div id="welcome_wrapper" class="hero-banner fullscreen-container"
     style="position: relative; width: 100%; min-height: 900px; overflow: hidden; background: #000;">
-    <div class="hero-slide"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('{{ asset('images/slide1.jpg') }}'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
+    <div class="hero-slide responsive-hero-bg"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
-        <!-- Styles for overlay height (95% desktop, 100% mobile) -->
+        <!-- Responsive Background Image Styles -->
         <style>
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 90%;
-            background-color: rgba(0, 0, 0, 0.3);
-            z-index: 1;
+        .responsive-hero-bg {
+            background-image: url('{{ asset('images/slide1.png') }}');
         }
-
-        @media (max-width: 990px) {
-            .hero-overlay {
-                height: 100%;
+        @media (max-width: 768px) {
+            .responsive-hero-bg {
+                background-image: url('{{ asset('images/slide-mobile.jpeg') }}') !important;
             }
         }
         </style>
 
         <!-- Dark Overlay -->
-        <div class="hero-overlay"></div>
+        <div class="overlay-main bg-blue-gradient"></div>
 
         <!-- Content Container -->
-        <div
-            style="position: absolute; top: 45%; left: 50px; transform: translateY(-50%); z-index: 10; max-width: 800px; color: white;">
+        <div class="hero-content">
 
             <!-- Title -->
-            <h1
-                style="font-size: 72px; line-height: 82px; font-weight: 700; margin: 0 0 30px 0; font-family: 'Poppins', sans-serif; text-transform: uppercase; color: #fff;">
+            <h1 class="hero-title">
                 Building Your Vision
             </h1>
 
             <!-- Subtitle -->
-            <p
-                style="font-size: 20px; line-height: 28px; font-weight: 500; margin: 0 0 40px 0; font-family: 'Poppins', sans-serif; color: #fff; max-width: 600px;">
+            <p class="hero-subtitle">
                 Specializing in Interlock Paving, Building & Road Construction and all Civil Works.
             </p>
 
             <!-- Buttons -->
-            <div style="display: flex; gap: 20px;">
-                <a href="#about" class="site-button-secondry btn-effect"
-                    style="display: inline-block; padding: 12px 30px; text-transform: uppercase; text-decoration: none; border-radius: 3px;">
+            <div class="hero-buttons">
+                <a href="#about" class="site-button-secondry btn-effect">
                     More About
                 </a>
-                <a href="#contact" class="site-button btn-effect"
-                    style="display: inline-block; padding: 12px 30px; text-transform: uppercase; text-decoration: none; border-radius: 3px;">
+                <a href="#contact" class="site-button btn-effect">
                     Contact Us
                 </a>
             </div>
