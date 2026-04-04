@@ -28,8 +28,11 @@
                             <div class="info-block m-b30">
                                 <h4 style="color: var(--site-primary); font-weight: 600;" class="m-b5 m-t0">Phone</h4>
                                 <p style="font-size: 16px; opacity: 0.8;" class="m-b0">
-                                    <a href="tel:+94774415869" class="text-white" style="text-decoration: none;">+94 774 457 165</a><br>
-                                    <a href="tel:+94774473518" class="text-white" style="text-decoration: none;">+94 774 415 869</a>
+                                    <a href="https://wa.me/{{ config('app.company_whatsapp') }}" class="text-white" style="text-decoration: none;" target="_blank">
+                                        +94 774 473 518 <small style="opacity:0.6;">(WhatsApp)</small>
+                                    </a><br>
+                                    <a href="tel:{{ config('app.company_phone') }}" class="text-white" style="text-decoration: none;">+94 774 457 165</a><br>
+                                    <a href="tel:{{ config('app.company_phone_alt') }}" class="text-white" style="text-decoration: none;">+94 774 415 869</a>
                                 </p>
                             </div>
 

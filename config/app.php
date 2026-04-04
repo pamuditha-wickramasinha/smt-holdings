@@ -133,9 +133,9 @@ return [
     'company_address'     => env('COMPANY_ADDRESS', '159/2, Wilaththawa, Bingiriya'),
     'company_location'    => env('COMPANY_LOCATION', 'Bingiriya, Sri Lanka'),
     'company_email'       => env('COMPANY_EMAIL', 'smtmwholdings@gmail.com'),
-    'company_phone'       => env('COMPANY_PHONE', '+94774415869'),
-    'company_phone_alt'   => env('COMPANY_PHONE_ALT', '+94774473518'),
-    'company_whatsapp'    => env('COMPANY_WHATSAPP', '94774415869'),
+    'company_phone'       => env('COMPANY_PHONE', '+94774457165'),
+    'company_phone_alt'   => env('COMPANY_PHONE_ALT', '+94774415869'),
+    'company_whatsapp'    => env('COMPANY_WHATSAPP', '94774473518'),
     'company_facebook'    => env('COMPANY_FACEBOOK', 'https://www.facebook.com/share/18N1XuZ9D5/'),
     'company_tiktok'      => env('COMPANY_TIKTOK', 'https://www.tiktok.com/@smt.holdings'),
 
